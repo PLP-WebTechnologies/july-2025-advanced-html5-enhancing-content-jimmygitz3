@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enhanced HTML5 Page with Form</title>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to My Enhanced HTML5 Page</h1>
+      <p>
+        This page demonstrates advanced HTML5 features including lists, tables,
+        media, and a form.
+      </p>
+    </header>
+
+    <section>
+      <h2>Features List</h2>
+      <ul>
+        <li>Semantic HTML5 structure</li>
+        <li>Accessible and user-friendly form</li>
+        <li>Native HTML5 validation</li>
+        <li>Embedded media content</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Sample Data Table</h2>
+      <table style="width: 100%">
+        
+          <tr>
+            <th style="border: 1px solid ">
+              Feature
+            </th>
+            <th style="border: 1px solid">
+              Description
+            </th>
+            <th style="border: 1px solid">
+              Status
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="border: 1px solid ">Lists</td>
+            <td style="border: 1px solid ">
+              Organize content clearly
+            </td>
+            <td style="border: 1px solid ">Implemented</td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid ">Tables</td>
+            <td style="border: 1px solid ">
+              Display structured data
+            </td>
+            <td style="border: 1px solid">Implemented</td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid ">Media</td>
+            <td style="border: 1px solid ">
+              Enhance visual engagement
+            </td>
+            <td style="border: 1px solid">Implemented</td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid ">Forms</td>
+            <td style="border: 1px solid ">
+              Collect user input
+            </td>
+            <td style="border: 1px solid ">Implemented</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Embedded Media</h2>
+      <figure>
+        <img
+         src="https://images.pexels.com/photos/20276761/pexels-photo-20276761.jpeg" alt="Sample Image" width="400" height="300" /> 
+        <figcaption>Figure 1: Placeholder image for demonstration</figcaption>
+      </figure>
+      <audio controls>
+        <source src="./media/enter_-burna-boy-x-fireboy-dml-type-beat-prod-by-tite-tunez-255566.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+      <video width="600" controls>
+        <source src="https://videos.pexels.com/video-files/3764259/3764259-hd_1280_720_60fps.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <section>
+      <h2>User Registration Form</h2>
+      <form action="#" method="post" autocomplete="on">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="fullname">Full Name:</label>
+          <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            required
+            minlength="3"
+            placeholder="John Doe"
+          />
+
+          <label for="email">Email Address:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="example@domain.com"
+          />
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required />
+        </fieldset>
+
+        <fieldset>
+          <legend>Account Details</legend>
+          <label for="username">Username:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            required
+            pattern="[a-zA-Z0-9]{5,}"
+            placeholder="Minimum 5 alphanumeric characters"
+          />
+
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            minlength="6"
+            placeholder="At least 6 characters"
+          />
+
+          <label for="confirm">Confirm Password:</label>
+          <input
+            type="password"
+            id="confirm"
+            name="confirm"
+            required
+            minlength="6"
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+          <label for="country">Country:</label>
+          <select id="country" name="country" required>
+            <option value="">--Select--</option>
+            <option value="Kenya">Kenya</option>
+            <option value="Uganda">Uganda</option>
+            <option value="Tanzania">Tanzania</option>
+          </select>
+
+          <label for="bio">Short Bio:</label>
+          <textarea
+            id="bio"
+            name="bio"
+            rows="4"
+            placeholder="Tell us a bit about yourself..."
+          ></textarea>
+
+          <label>
+            <input type="checkbox" name="terms" required />
+            I agree to the terms and conditions
+          </label>
+        </fieldset>
+
+        <input type="submit" value="Register" />
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Enhanced HTML5 Demo. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
